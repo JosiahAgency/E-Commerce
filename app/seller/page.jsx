@@ -2,11 +2,10 @@
 import React, {useState} from "react";
 import {assets} from "@/assets/assets";
 import Image from "next/image";
-import axios, {request} from "axios";
+import axios from "axios";
 import {useAppContext} from "@/context/AppContext";
 import toast from "react-hot-toast";
-import {NextResponse} from "next/server";
-import {clerkClient, getAuth} from "@clerk/nextjs/server";
+
 import {error} from "next/dist/build/output/log";
 
 const AddProduct = () => {
@@ -40,7 +39,6 @@ const AddProduct = () => {
                 headers: {Authorization: `Bearer ${token}`},
                 withCredentials: true
             })
-
 
 
             if (data.success) {
