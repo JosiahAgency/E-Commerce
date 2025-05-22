@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^6.19.5",
+    "axios": "^1.9.0",
+    "cloudinary": "^2.6.1",
     "inngest": "^3.37.0",
     "mongoose": "^8.15.0",
     "next": "15.3.2",
